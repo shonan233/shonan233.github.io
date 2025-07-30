@@ -99,6 +99,14 @@ body > header {
 	background:#dad8c9;
 	margin:-10px calc(-1 * var(--text-padding)) 1em calc(-1 * var(--text-padding));
 	padding: 40px var(--text-padding) 1px var(--text-padding);
+
+	--logo-size: 60pt;
+
+	background-origin: content-box;
+	background-image: url(literal-logo.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 0px left calc(-10px - var(--logo-size));
+	background-size: var(--logo-size) auto;
 }
 
 body > header > h1 {
