@@ -1,0 +1,143 @@
+/* -------- first a CSS reset ---------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------- now the actual style ---------- */
+
+body {
+	background:#f2edeb;
+	color:#110;
+	font-size:12pt;
+
+	font-family: "Lora", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+
+	line-height:1.2;
+
+	--text-width:calc(min(100vw - 20px, 40em));
+	--text-padding:calc(0.5 * (100vw - var(--text-width)));
+
+	padding: 10px var(--text-padding) 200px var(--text-padding);
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+
+	line-height:1;
+}
+
+h1 {
+	font-size:32pt;
+}
+
+h2 {
+	font-size:20pt;
+}
+
+.pretitle {
+	display:block;
+	font-size:14pt;
+	text-decoration:none;
+	color:#433d2b;
+	margin: 0 0 5px 0;
+}
+
+body > header {
+	background:#dad8c9;
+	margin:-10px calc(-1 * var(--text-padding)) 1em calc(-1 * var(--text-padding));
+	padding: 40px var(--text-padding) 1px var(--text-padding);
+}
+
+body > header > h1 {
+	margin:0 0 calc(-0.08em + -1px) 0;
+}
+
+
+section > header {
+	background:#e1dfcf;
+	margin:2em calc(-1 * var(--text-padding)) 0.3em calc(-1 * var(--text-padding));
+	padding:0 var(--text-padding) 1px var(--text-padding);
+}
+
+section > header > h2 {
+	margin:0 0 calc(-0.08em + -1px) 0;
+}
+
+
+p {
+	margin: 0 0 1em 0;
+}
+
+.focus {
+	margin: calc(2em - 10px) -15px calc(1em - 10px) -15px;
+	padding:10px 15px;
+	border-radius:10px;
+	background:#d5ac9b;
+}
+
+em {
+	font-weight:600;
+}
+
+ul {
+	padding: 0 0 0 10px;
+}
+
+li::before {
+	content:'-';
+	width:10px;
+	margin: 0 0 0 -10px;
+}
