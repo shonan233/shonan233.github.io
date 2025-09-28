@@ -144,8 +144,12 @@ ul {
 	padding: 0 0 0 10px;
 }
 
-li::before {
+li li::before {
 	content:'-';
 	width:10px;
 	margin: 0 0 0 -10px;
+}
+
+li li {
+	margin: 0 0 0 20px;
 }
