@@ -157,3 +157,26 @@ li li::before {
 li li {
 	margin: 0 0 0 20px;
 }
+
+ul.gallery {
+	display:flex;
+	flex-flow: row wrap;
+	margin: 0 0 0 20px;
+}
+
+ul.gallery > li {
+	display:block;
+	margin:4px;
+}
+ul.gallery > li a {
+	display:block;
+	padding:2px;
+}
+ul.gallery > li a:hover {
+	background:#8808;
+}
+ul.gallery > li img {
+	display:block;
+	max-width:200px;
+	max-height:200px;
+}
